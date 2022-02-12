@@ -1,0 +1,103 @@
+:root {
+  --accent: white;
+  --bg: #041243;
+  --glow: #e6366b;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: local('Minecraft'), url(./fonts/Minecraft.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  font-family: 'Minecraft', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.section-container {
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
+.header-container {
+  color: white;
+  padding: 0;
+}
+
+.heading {
+  font-family: 'Minecraft', sans-serif;
+  text-transform: uppercase;
+  /* display: flex; 
+  justify-content: center; */
+  font-size: 3vw;
+  color: var(--accent);
+  text-shadow: 0 0 10px #fff, 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow)
+  /* background: var(--accent);
+  background: -webkit-linear-gradient(to right, var(--accent) 20%, #C1CF63 100%);
+  background: -moz-linear-gradient(to right, var(--accent) 20%, #C1CF63 100%);
+  background: linear-gradient(to right, var(--accent) 20%, #C1CF63 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+
+.heading-2 {
+  /* font-family: 'Bebas Neue', cursive; */
+  font-family: 'Minecraft', sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 4vw;
+  text-shadow: 0 0 10px #fff, 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow)
+  /* background: -webkit-linear-gradient(to right, var(--accent) 20%, #C1CF63 100%);
+  background: -moz-linear-gradient(to right, var(--accent) 20%, #C1CF63 100%);
+  background: linear-gradient(to right, var(--accent) 20%, #C1CF63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.header-content {
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  padding-bottom: 3vh;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
